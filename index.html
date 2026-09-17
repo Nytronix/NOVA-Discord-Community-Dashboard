@@ -3,3 +3,407 @@ NOVA-Discord-Community-Dashboard/
 ├── style.css
 ├── script.js
 └── README.md
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA — Discord Community Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">N</div>
+                <div>
+                    <h1>NOVA</h1>
+                    <span>Community Dashboard</span>
+                </div>
+            </div>
+
+            <nav class="navigation">
+
+                <p class="nav-title">MAIN</p>
+
+                <a href="#" class="nav-item active">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>♟</span>
+                    Members
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>◉</span>
+                    Moderation
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>▣</span>
+                    Tickets
+                </a>
+
+                <p class="nav-title">MANAGEMENT</p>
+
+                <a href="#" class="nav-item">
+                    <span>◈</span>
+                    Server
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>⚙</span>
+                    Settings
+                </a>
+
+            </nav>
+
+            <div class="server-card">
+                <div class="server-status"></div>
+
+                <div>
+                    <strong>NOVA Community</strong>
+                    <span>● Online</span>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Header -->
+            <header class="header">
+
+                <div>
+                    <p class="breadcrumb">NOVA / Dashboard</p>
+                    <h2>Welcome back.</h2>
+                    <p class="subtitle">
+                        Here's what's happening in your community today.
+                    </p>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-info">
+                        <strong>Administrator</strong>
+                        <span>Online</span>
+                    </div>
+
+                    <div class="avatar">
+                        A
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- Stats -->
+            <section class="stats">
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Total Members</span>
+                        <div class="stat-icon">♟</div>
+                    </div>
+
+                    <h3>12,847</h3>
+                    <p class="positive">↑ 8.4% <span>this month</span></p>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Members Online</span>
+                        <div class="stat-icon">●</div>
+                    </div>
+
+                    <h3>2,391</h3>
+                    <p class="positive">↑ 12.7% <span>today</span></p>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Messages</span>
+                        <div class="stat-icon">✉</div>
+                    </div>
+
+                    <h3>48,294</h3>
+                    <p class="positive">↑ 5.2% <span>this week</span></p>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Moderation</span>
+                        <div class="stat-icon">◆</div>
+                    </div>
+
+                    <h3>184</h3>
+                    <p class="neutral">Actions this week</p>
+                </div>
+
+            </section>
+
+
+            <!-- Dashboard Grid -->
+            <section class="dashboard-grid">
+
+                <!-- Activity -->
+                <div class="panel activity-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Community Activity</h3>
+                            <p>Server activity over the last 7 days</p>
+                        </div>
+
+                        <button class="dropdown">
+                            Last 7 days ▾
+                        </button>
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="chart-y">
+                            <span>5k</span>
+                            <span>4k</span>
+                            <span>3k</span>
+                            <span>2k</span>
+                            <span>1k</span>
+                            <span>0</span>
+                        </div>
+
+                        <div class="chart-area">
+
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+
+                            <div class="bars">
+                                <div class="bar" style="height: 42%"></div>
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 48%"></div>
+                                <div class="bar" style="height: 75%"></div>
+                                <div class="bar" style="height: 68%"></div>
+                                <div class="bar" style="height: 88%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                            </div>
+
+                            <div class="chart-days">
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Server Status -->
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Server Status</h3>
+                            <p>Current system status</p>
+                        </div>
+
+                        <span class="online-badge">Operational</span>
+                    </div>
+
+                    <div class="status-list">
+
+                        <div class="status-row">
+                            <div class="status-dot"></div>
+                            <div>
+                                <strong>Discord Gateway</strong>
+                                <span>Connected</span>
+                            </div>
+                            <b>32ms</b>
+                        </div>
+
+                        <div class="status-row">
+                            <div class="status-dot"></div>
+                            <div>
+                                <strong>NOVA Bot</strong>
+                                <span>Running normally</span>
+                            </div>
+                            <b>18ms</b>
+                        </div>
+
+                        <div class="status-row">
+                            <div class="status-dot"></div>
+                            <div>
+                                <strong>Database</strong>
+                                <span>Operational</span>
+                            </div>
+                            <b>24ms</b>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Bottom Grid -->
+            <section class="bottom-grid">
+
+                <!-- Recent Members -->
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Recent Members</h3>
+                            <p>Latest people to join your server</p>
+                        </div>
+
+                        <button class="text-button">
+                            View all →
+                        </button>
+
+                    </div>
+
+                    <div class="members">
+
+                        <div class="member">
+                            <div class="member-avatar">M</div>
+
+                            <div class="member-info">
+                                <strong>Maxwell</strong>
+                                <span>@maxwell</span>
+                            </div>
+
+                            <span class="role">Member</span>
+                        </div>
+
+
+                        <div class="member">
+                            <div class="member-avatar">L</div>
+
+                            <div class="member-info">
+                                <strong>Lucifer</strong>
+                                <span>@lucifer</span>
+                            </div>
+
+                            <span class="role">VIP</span>
+                        </div>
+
+
+                        <div class="member">
+                            <div class="member-avatar">S</div>
+
+                            <div class="member-info">
+                                <strong>Shadow</strong>
+                                <span>@shadow</span>
+                            </div>
+
+                            <span class="role">Member</span>
+                        </div>
+
+
+                        <div class="member">
+                            <div class="member-avatar">V</div>
+
+                            <div class="member-info">
+                                <strong>Vortex</strong>
+                                <span>@vortex</span>
+                            </div>
+
+                            <span class="role">Moderator</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Moderation -->
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Recent Moderation</h3>
+                            <p>Latest actions taken</p>
+                        </div>
+
+                        <button class="text-button">
+                            View logs →
+                        </button>
+
+                    </div>
+
+                    <div class="moderation-list">
+
+                        <div class="mod-item">
+                            <div class="mod-icon warn">!</div>
+
+                            <div>
+                                <strong>Warning issued</strong>
+                                <span>Moderator • 4 minutes ago</span>
+                            </div>
+                        </div>
+
+
+                        <div class="mod-item">
+                            <div class="mod-icon ban">×</div>
+
+                            <div>
+                                <strong>Member banned</strong>
+                                <span>Administrator • 18 minutes ago</span>
+                            </div>
+                        </div>
+
+
+                        <div class="mod-item">
+                            <div class="mod-icon mute">−</div>
+
+                            <div>
+                                <strong>Member muted</strong>
+                                <span>Moderator • 42 minutes ago</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <footer>
+                <span>NOVA Dashboard</span>
+                <span>System operational • v1.0.0</span>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
